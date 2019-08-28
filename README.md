@@ -14,7 +14,7 @@ Students can:
 - challenge one another in a real-time multiplayer game where they can compare their knowledge
 
 The app is made using Java, MySQL, PHP, node.JS, JavaScript, socket.io.
-I have also integrated the API from Open Trivia Database.
+I have also integrated the API from Open Trivia DB.
 
 ![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/registration-login.png)
 ![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/api-quiz.png)
