@@ -15,4 +15,12 @@ Students can:
 
 The app is made using Java, MySQL, PHP, node.JS, JavaScript, socket.io.
 
+![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/registration-login.png)
 ![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/api-quiz.png)
+![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/create-quiz.png)
+![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/view-quiz.png)
+![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/piechart-barchart.png)
+![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/linechart.png)
+![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/challenge-mode.png)
+![alt text](https://github.com/krystal25/quizrific/blob/master/screenshots/chat.png)
+
