@@ -1,5 +1,4 @@
 # quizrific
-Android app for managing quizzes
 
 Quizrific is a mobile application dedicated to students and professors to help them better prepare for courses.
 Professors can: 
