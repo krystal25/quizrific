@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout      xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/whitebackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect with other users"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:id="@+id/chat_tv_connect"/>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messagelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="10dp"
+            android:textStyle="italic"
+            android:id="@+id/chat_tv_typing"/>
+
+        <View android:layout_marginTop="5mm"
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/message_et"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:hint="your message"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="send" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

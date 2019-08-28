@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "495262267509",
+    "firebase_url": "https://quizrific.firebaseio.com",
+    "project_id": "quizrific",
+    "storage_bucket": "quizrific.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495262267509:android:9174b7cb583b52bd",
+        "android_client_info": {
+          "package_name": "com.example.dcris.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495262267509-86r2rsk6eirndm9b7ukpg345lq1b12at.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5c6WNlOoV7_BSVEMQB2mfoGxazY2eF2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495262267509-86r2rsk6eirndm9b7ukpg345lq1b12at.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

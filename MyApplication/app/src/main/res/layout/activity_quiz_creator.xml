@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whitebackground"
+    >
+
+    <LinearLayout
+        android:id="@+id/lin_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_question"
+        android:layout_below="@id/lin_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start">
+
+        <ImageButton
+            android:id="@+id/quizCreator_btn_addFile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_attach_file_accent_24dp" />
+
+    <EditText
+        android:id="@+id/quizCreator_et_question"
+        android:layout_width="235dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:hint="Question"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/quizCreator_et_points"
+        android:layout_width="60dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:hint="Points"
+        android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_vert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin_question"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+    </LinearLayout>
+<!--
+</ScrollView> -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lin_vert"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/quizCreator_tv_add"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="Add answer option"
+        android:textSize="20dp"
+        android:textStyle="bold"
+      />
+
+    <ImageButton
+        android:id="@+id/quizCreator_btn_addAnswer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_add_circle_primary_24dp" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/quizCreator_btn_insertQuestion"
+        android:layout_width="139dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/button"
+        android:text="Add question"
+        android:textColor="#ffffff"
+        />
+
+
+<!--
+    <TextView
+        android:id="@+id/quizCreator_tv_isCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="62dp"
+        android:text="Correct?" /> -->
+
+    <TextView
+        android:id="@+id/quizCreator_tv_validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:textColor="@color/colorAccent"
+    />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebackground">
+
+
+    <Spinner
+        android:id="@+id/account_spn_departments"
+        android:layout_centerHorizontal="true"
+        android:layout_width="248dp"
+        android:layout_height="90dp"
+        android:entries="@array/depts_array"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/account_spn_courses"
+        android:layout_width="248dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/courses_array"
+        android:layout_below="@id/account_spn_departments"
+        android:layout_marginBottom="50dp"
+   />
+
+
+
+    <Button
+        android:id="@+id/account_btn_insert"
+        android:layout_width="106dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/account_spn_courses"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:text="register course"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/account_tv_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/account_btn_insert"
+        />
+
+
+
+</RelativeLayout>

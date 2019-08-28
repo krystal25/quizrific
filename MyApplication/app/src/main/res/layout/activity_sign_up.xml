@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebackground">
+
+    <EditText
+        android:id="@+id/signup_et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signup_et_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signup_et_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="445dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/signup_tv_wrong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signup_et_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/firstname"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signup_et_lastname"
+        android:layout_width="215dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="289dp"
+        android:ems="10"
+        android:hint="@string/lastname"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/signup_rg_accType"
+        android:layout_width="216dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="364dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/signup_rb_student"
+            android:layout_width="94dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/student"
+            android:textColor="@color/colorPrimary" />
+
+        <RadioButton
+            android:id="@+id/signup_rb_prof"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/professor"
+            android:textColor="@color/colorPrimary" />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/signup_btn_createAccount"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Create account"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_rg_accType" />
+
+    <TextView
+        android:id="@+id/signup_tv_wrong"
+        android:layout_width="147dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btn_createAccount" />
+
+</android.support.constraint.ConstraintLayout>

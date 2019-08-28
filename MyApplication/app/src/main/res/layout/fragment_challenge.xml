@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebackground"
+    tools:context=".fragments.ChallengeFragment">
+
+    <Button
+        android:id="@+id/fragchallenge_btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_below="@id/tv_description"
+        android:layout_centerHorizontal="true"
+        android:text="Start game" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="Compete against one other student and prove that you know your stuff.\nYou both receive the same quiz and have 10 seconds to answer each question.\nIf your answer is wrong or if you omit to answer, you lose one point.\nThe student with the biggest score wins."
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Rise to the challenge"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView3"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_marginTop="20dp"
+        android:layout_width="145dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/trophy" />
+
+</RelativeLayout>

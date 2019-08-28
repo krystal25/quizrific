@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebackground">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/statsviewer_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results of the students who took "
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/statsviewer_tv_descr"
+        android:layout_below="@id/statsviewer_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on the passed slice to see further stats"
+        android:textColor="@drawable/text_color_pressed"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:visibility="invisible">
+
+    <requestFocus />
+    </TextView>
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_below="@id/statsviewer_tv_descr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pie"
+        android:visibility="invisible">
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <TextView
+        android:id="@+id/statsviewer_tv_legend1"
+        android:layout_below="@id/statsviewer_tv_descr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pass"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:textSize="12dp"
+        android:visibility="invisible">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/statsviewer_tv_legend2"
+        android:layout_below="@id/statsviewer_tv_legend1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="fail"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-10dp"
+        android:gravity="right"
+        android:textSize="12dp"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/statsviewer_pb"
+        />
+
+</RelativeLayout>

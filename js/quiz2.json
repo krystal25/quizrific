@@ -1,0 +1,62 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Java",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which was the first purely object oriented programming language developed?",
+      "correct_answer": "SmallTalk",
+      "incorrect_answers": [
+        "Java",
+        "C++",
+        "Kotlin"
+      ]
+    },
+	  {
+      "category": "mysql",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Foreign keys cannot handle deletes and updates.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Java",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Feature of OOP illustrated the code reusability?",
+      "correct_answer": "Inheritance",
+      "incorrect_answers": [
+        "Abstraction",
+        "Encapsulation",
+        "Polymorphism"
+      ]
+    },
+    {
+      "category": "Linux",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which option of rm command is used to remove a directory with all its subdirectories?",
+      "correct_answer": "–r",
+      "incorrect_answers": [
+        "–b",
+        "-o"
+      ]
+    },
+    {
+      "category": "Linux",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which is the core of the operating system?",
+      "correct_answer": "Kernel",
+      "incorrect_answers": [
+        "Shell",
+        "Commands",
+        "Script"
+      ]
+    }
+  ]
+}

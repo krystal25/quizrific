@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebackground"
+    tools:context="com.example.dcris.myapplication.LoginActivity">
+
+    <Button
+        android:id="@+id/main_btn_login"
+        android:layout_width="130dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="245dp"
+        android:background="@drawable/button"
+        android:text="Log In"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_tv_createAcc"
+        android:layout_width="129dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="167dp"
+        android:text="Create Account"
+        android:textColor="@drawable/text_color_pressed"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <requestFocus />
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/main_tv_wrong"
+        android:layout_width="150dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="95dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <EditText
+        android:id="@+id/main_et_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="226dp"
+        android:layout_marginBottom="388dp"
+        android:ems="10"
+        android:hint="username"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/main_et_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="324dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_tv_slogan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/main_tv_slogan"
+        android:layout_width="187dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:text="Test your abilities"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/main_et_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="205dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="44dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/icon_no_bg"
+        app:layout_constraintBottom_toTopOf="@+id/main_tv_slogan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+</android.support.constraint.ConstraintLayout>

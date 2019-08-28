@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebackground">
+
+    <Spinner
+        android:id="@+id/fraggprogress_spn_courses"
+        android:layout_width="248dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Spinner
+        android:id="@+id/fragprogress_spn_quizzes"
+        android:layout_width="248dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fraggprogress_spn_courses"
+        />
+
+
+    <Button
+        android:id="@+id/fragprogress_btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_below="@id/fragprogress_spn_quizzes"
+        android:layout_centerHorizontal="true"
+        android:text="Show stats" />
+</RelativeLayout>

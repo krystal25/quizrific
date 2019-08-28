@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:background="@drawable/whitebackground">
+
+    <ImageView
+        android:id="@+id/fraggrowth_iv_stats"
+        android:layout_marginTop="20dp"
+        android:layout_width="145dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/presentation" />
+
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_below="@id/fraggrowth_iv_stats"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Easily track the progress of your students"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <Spinner
+        android:id="@+id/fraggrowth_spn_departments"
+        android:layout_centerHorizontal="true"
+        android:layout_width="248dp"
+        android:layout_height="90dp"
+        android:entries="@array/depts_array"
+        android:layout_below="@id/tv_description"
+        />
+
+    <Spinner
+        android:id="@+id/fraggrowth_spn_courses"
+        android:layout_width="248dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fraggrowth_spn_departments"
+        />
+
+    <Spinner
+        android:id="@+id/fraggrowth_spn_quizzes"
+        android:layout_width="248dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fraggrowth_spn_courses"
+        />
+
+
+    <Button
+        android:id="@+id/fraggrowth_btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_below="@id/fraggrowth_spn_quizzes"
+        android:layout_centerHorizontal="true"
+        android:text="Show stats" />
+
+</RelativeLayout>

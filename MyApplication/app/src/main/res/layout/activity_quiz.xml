@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/whitebackground"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="Time left: "
+        android:id="@+id/quiz_tv_timer"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category: "
+        android:textSize="15dp"
+        android:id="@+id/quiz_tv_category"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty: "
+        android:textSize="15dp"
+        android:layout_below="@id/quiz_tv_category"
+        android:id="@+id/quiz_tv_diff"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="x/question count "
+        android:id="@+id/quiz_tv_count"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/quiz_iv_image"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/quiz_tv_timer"
+        android:visibility="gone"
+        android:layout_marginBottom="-50dp"
+       />
+
+    <TextView
+        android:id="@+id/quiz_tv_question"
+        android:layout_width="385dp"
+        android:layout_height="161dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="Question"
+        android:layout_below="@+id/quiz_iv_image"/>
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@+id/quiz_tv_question"
+        android:layout_centerHorizontal="true"
+        >
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="214dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/lin"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/quiz_btn_prev"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:scaleX="-1"
+            app:srcCompat="@drawable/next_icon_arrow" />
+
+        <ImageButton
+            android:id="@+id/quiz_btn_next"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/next_icon_arrow" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/quiz_btn_submit"
+        android:layout_below="@+id/lin"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+</RelativeLayout>

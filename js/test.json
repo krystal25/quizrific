@@ -1,0 +1,29 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Java",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which was the first purely object oriented programming language developed?",
+      "correct_answer": "SmallTalk",
+      "incorrect_answers": [
+        "Java",
+        "C++",
+        "Kotlin"
+      ]
+    },
+    {
+      "category": "Java",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Feature of OOP illustrated the code reusability?",
+      "correct_answer": "Inheritance",
+      "incorrect_answers": [
+        "Abstraction",
+        "Encapsulation",
+        "Polymorphism"
+      ]
+    }
+  ]
+}

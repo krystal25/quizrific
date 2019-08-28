@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/nav_home"
+        />
+    <item
+        android:id="@+id/nav_progress"
+        android:icon="@drawable/ic_trending_up_white_24dp"
+        android:title="@string/nav_progress" />
+    <item
+        android:id="@+id/nav_upcoming"
+        android:icon="@drawable/ic_hourglass_full_white_24dp"
+        android:title="@string/nav_upcoming" />
+    <item
+        android:id="@+id/nav_practice"
+        android:icon="@drawable/ic_content_paste_black_24dp"
+        android:title="@string/nav_practice" />
+    <item
+        android:id="@+id/nav_challenge"
+        android:icon="@drawable/ic_group_white_24dp"
+        android:title="@string/nav_challenge" />
+</menu>
